@@ -2,44 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Matt's Disney Cover Letter & Showreel</title>
+  <title>Matt – Disney Application</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      line-height: 1.6;
-      background: #f8f8f8;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #fdfdfd;
       color: #333;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.6;
     }
-    h1 { text-align: center; }
-    video { display: block; margin: 20px auto; max-width: 100%; }
-    .cover-letter { margin-top: 30px; }
+    h1, h2 {
+      text-align: center;
+      color: #0a74da; /* Disney-ish blue */
+    }
+    .cover-letter {
+      margin: 40px auto;
+      max-width: 800px;
+      font-size: 1.1em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #222;
+      font-size: 1.1em;
+    }
+    .card p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .card .details {
+      display: none;
+      font-size: 0.9em;
+      margin-top: 10px;
+      color: #444;
+    }
+    .card.active .details {
+      display: block;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
 
 <script>
   let pass = prompt("Enter password:");
-  if(pass !== "DisneyWish2022") {
+  if(pass !== "disney123") {
     document.body.innerHTML = "<h1>Access Denied</h1>";
     throw "Access denied";
   }
 </script>
 
-<h1>Matt's Disney Cover Letter & Showreel</h1>
-
-<video controls>
-  <source src="showreel.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<h1>Application to Disney</h1>
 
 <div class="cover-letter">
   <p>Dear Disney Recruitment Team,</p>
-  <p>[Insert your cover letter text here]</p>
+  <p>Disney has always been where imagination meets innovation. My work has followed the same path: blending creativity with technology to bring ideas to life and make complex challenges accessible. Whether leading digital transformation at scale, building data-driven services, or shaping AI solutions, I’ve focused on delivering outcomes that feel effortless to the user but powerful behind the scenes.</p>
+  <p>I’ve chosen a handful of projects below that show the range of my experience — from public sector transformation to global media and e-commerce. Each represents a different way I’ve brought creativity, leadership, and technology together to make an impact. I’d love to bring this approach to Disney.</p>
   <p>Best regards,<br>Matt</p>
 </div>
+
+<h2>Selected Case Studies</h2>
+
+<div class="grid">
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Be Part of Research</h3>
+    <p>NIHR</p>
+    <div class="details">Helped design and deliver the NIHR’s research participant platform, connecting thousands of volunteers with clinical trials across the UK.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Data Product Family Service Transformation</h3>
+    <p>HMPO</p>
+    <div class="details">Led the transformation of HM Passport Office’s data product services, enabling more agile development and streamlined operations.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>AI/ML Anti–Money Laundering Service</h3>
+    <p>NCA JMLIT</p>
+    <div class="details">Delivered AI/ML services to detect suspicious financial activity, supporting the Joint Money Laundering Intelligence Taskforce.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Auto-Enrolment In-Sourcing</h3>
+    <p>TPR</p>
+    <div class="details">(Or Azure Migration) — Major programme to in-source auto-enrolment systems, enhancing resilience and reducing vendor lock-in.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Manage Your Move</h3>
+    <p>FCDO</p>
+    <div class="details">Developed a platform to support staff relocating globally, simplifying complex processes into a user-friendly digital service.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Global E-commerce Transformation</h3>
+    <p>Avis Budget Group</p>
+    <div class="details">Led transformation of global e-commerce platforms, streamlining booking journeys and boosting digital conversion rates.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Global Platform Migration</h3>
+    <p>Expedia Affiliate Network</p>
+    <div class="details">Directed migration of global partner booking systems onto a unified platform, improving performance and scalability.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Broadcast Subtitling Service Launch</h3>
+    <p>Red Bee Media</p>
+    <div class="details">Launched new broadcast subtitling services, balancing cutting-edge technology with accessibility requirements.</div>
+  </div>
+  <div class="card" onclick="this.classList.toggle('active')">
+    <h3>Digital Transformation Programme</h3>
+    <p>BBC News Support Services</p>
+    <div class="details">Directed a multi-year digital transformation initiative, enhancing editorial support systems and newsroom efficiency.</div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Matt — Disney Application</p>
+</footer>
 
 </body>
 </html>
