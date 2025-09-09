@@ -180,6 +180,48 @@
     .close:hover {
       background: #095bb3;
     }
+    /* Modal base */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scrolling if content overflows */
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  max-height: 80vh; /* force viewport height limit */
+  overflow-y: auto; /* scroll inside the modal */
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Close button */
+.modal-content .close {
+  position: sticky; /* sticks to the top while scrolling */
+  top: 0;
+  float: right;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #253b56;
+  cursor: pointer;
+  background: #fff;
+  padding: 0 6px;
+  border-radius: 6px;
+}
+.modal-content .close:hover {
+  color: #d32f2f;
+}
   </style>
 </head>
 <body>
