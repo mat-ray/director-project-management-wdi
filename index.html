@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matt's Disney Cover Letter & Showreel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f8f8f8;
+      color: #333;
+    }
+    h1 { text-align: center; }
+    video { display: block; margin: 20px auto; max-width: 100%; }
+    .cover-letter { margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+<script>
+  let pass = prompt("Enter password:");
+  if(pass !== "DisneyWish2022") {
+    document.body.innerHTML = "<h1>Access Denied</h1>";
+    throw "Access denied";
+  }
+</script>
+
+<h1>Matt's Disney Cover Letter & Showreel</h1>
+
+<video controls>
+  <source src="showreel.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="cover-letter">
+  <p>Dear Disney Recruitment Team,</p>
+  <p>[Insert your cover letter text here]</p>
+  <p>Best regards,<br>Matt</p>
+</div>
+
+</body>
+</html>
