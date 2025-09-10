@@ -12,20 +12,6 @@
       padding: 0;
       color: #333;
     }
-    .banner {
-      width: 100%;
-      background: #fff;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      border-radius: 0 0 0 0; 
-      max-width: 100%;
-    }
-    .banner h1, .banner h2 {
-      margin: 0;
-      color: #253b56;
-    }
     .banner h1 {
       font-size: 2.2em;
     }
@@ -36,9 +22,13 @@
     .masthead {
       width: 100%;
       border-radius: 0;          /* kills the rounded corners */
-      background: #253b56;       /* or your gradient/image */
+      background: #fff;       /* or your gradient/image */
       margin: 0;
-      padding: 2rem 0;           /* spacing top & bottom */
+      max-width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 0 0 0 0; 
+      padding: 0;           /* spacing top & bottom */
     }
 
     .masthead-inner {
@@ -47,6 +37,10 @@
       padding: 0 1rem;           /* breathing room at mobile */
       text-align: center;
       color: white;              /* if your background is dark */
+    }
+    .masthead h1, .banner h2 {
+      margin: 0;
+      color: #253b56;
     }
     main {
       max-width: 1200px;
