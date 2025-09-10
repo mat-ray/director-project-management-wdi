@@ -21,18 +21,33 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       border-radius: 0 0 0 0; 
       max-width: 100%;
-}
+    }
     .banner h1, .banner h2 {
       margin: 0;
       color: #253b56;
-}
+    }
     .banner h1 {
       font-size: 2.2em;
-}
+    }
     .banner h2 {
       font-size: 1.4em;
       margin-top: 10px;
-}
+    }
+    .masthead {
+      width: 100%;
+      border-radius: 0;          /* kills the rounded corners */
+      background: #253b56;       /* or your gradient/image */
+      margin: 0;
+      padding: 2rem 0;           /* spacing top & bottom */
+    }
+
+    .masthead-inner {
+      max-width: 1200px;         /* keeps text at a readable width */
+      margin: 0 auto;            /* centers it */
+      padding: 0 1rem;           /* breathing room at mobile */
+      text-align: center;
+      color: white;              /* if your background is dark */
+    }
     main {
       max-width: 1200px;
       margin: 0 auto;
@@ -258,10 +273,12 @@
 
 <div id="content" style="display:none;">
   <main>
-    <div class="banner">
-      <h1>Matt Rayner</h1>
-      <h2>Application for Director Project Management, Walt Disney Imagineering</h2>
-    </div>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1>Application for Director Project Management, Walt Disney Imagineering</h1>
+        <h2>Matt Rayner</h2>
+      </div>
+    </header>
     <div class="cover-letter">
       <p>Disney has always been where imagination meets innovation. I have built my career at that same intersection — taking ambitious ideas, complex technology, and diverse teams, and turning them into experiences that matter.
 </p>
