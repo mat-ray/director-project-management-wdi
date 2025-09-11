@@ -24,8 +24,12 @@
       border-radius: 0 0 0 0; 
       padding: 0;           /* spacing top & bottom */
     }
-
-    .masthead-inner {
+    .masthead-top,
+    .masthead-bottom {
+      width: 100%;
+      padding: 10px 0; /* only vertical padding here */
+    }
+    .masthead-content {
       max-width: 1200px;         /* keeps text at a readable width */
       margin: 0 auto;            /* centers it */
       padding: 0 1rem;           /* breathing room at mobile */
@@ -44,7 +48,7 @@
       margin-top: 10px;
     }
     .masthead-top {
-      border-bottom: 1px solid rgba(0,0,0,0.1); /* subtle Disney-style line */
+      border-bottom: 1px solid rgba(0,0,0,0.1); /* subtle line */
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);   /* light shadow for depth */
 }
     main {
@@ -276,14 +280,18 @@
 
 <div id="content" style="display:none;">
  
-    <header class="masthead">
-      <div class="masthead-inner">
-        <div class="masthead-top">
-          <h1>Matt Rayner</h1>
-        </div>  
-        <h2>Application for Director Project Management, Walt Disney Imagineering</h2>
+  <header class="masthead">
+    <div class="masthead-top">
+      <div class="masthead-content">
+        <h1>Matt Rayner</h1>
       </div>
-    </header>
+    </div>
+    <div class="masthead-bottom">
+      <div class="masthead-content">
+        <h2>Digital Transformation & Delivery Leadership</h2>
+      </div>
+    </div>
+  </header>
    <main>
     <div class="cover-letter">
       <p>Disney has always been where imagination meets innovation. I have built my career at that same intersection — taking ambitious ideas, complex technology, and diverse teams, and turning them into experiences that matter.
