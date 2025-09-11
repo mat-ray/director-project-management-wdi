@@ -84,6 +84,8 @@
       object-fit: cover;
       border-radius: 12px; /* Rounded corners */
       flex-shrink: 0;
+      float: right;    
+      margin: 0 0 10px 15px; /* Top 0, right 0, bottom 10px, left 15px */
     }
     
     .cover-letter-text {
@@ -100,7 +102,9 @@
       }
     
       .cover-letter-photo {
-        margin-bottom: 15px;    /* Space between image and text */
+        float: none;          /* Stack image above text */
+        display: block;
+        margin: 0 auto 15px auto; /* Center image with spacing */
       }
     }
     /* Grid wrapper */
