@@ -240,25 +240,24 @@
   overflow: auto; /* enable scrolling if content overflows */
   background-color: rgba(0,0,0,0.6);
 }
-
-/* Modal content box */
+    
 .modal-content {
   background-color: #fff;
   margin: 5% auto;
   padding: 20px 30px;
   border-radius: 12px;
   max-width: 800px;
-  max-height: 80vh; /* force viewport height limit */
-  overflow-y: auto; /* scroll inside the modal */
-  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;  /* KEY: gives anchor for absolute children */
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Close button */
+/* Close button fixed in the corner */
 .modal-content .close {
-  position: sticky; /* sticks to the top while scrolling */
-  top: 0;
-  float: right;
+  position: absolute;  /* instead of sticky */
+  top: 10px;           /* offset from top edge */
+  right: 10px;         /* offset from right edge */
   font-size: 1.8em;
   font-weight: bold;
   color: #1994d7;
@@ -266,7 +265,9 @@
   background: #fff;
   padding: 0 6px;
   border-radius: 6px;
-}
+  line-height: 1;      /* avoids weird vertical spacing */
+  z-index: 10;         /* keeps it above content */
+}    
 .modal-content .close:hover {
   color: #d32f2f;
 }
