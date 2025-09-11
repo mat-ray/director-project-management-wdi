@@ -12,13 +12,7 @@
       padding: 0;
       color: #333;
     }
-    .banner h1 {
-      font-size: 2.8em;
-    }
-    .banner h2 {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
+   
     .masthead {
       width: 100%;
       border-radius: 0;          /* kills the rounded corners */
@@ -38,13 +32,20 @@
       text-align: center;
       color: white;              /* if your background is dark */
     }
-    .masthead h1, .banner h2 {
+    .masthead h1, .masthead h2 {
       margin: 0;
       color: #253b56;
     }
+     .masthead h1 {
+      font-size: 2.8em;
+    }
+    .masthead h2 {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
     .masthead-top {
-  border-bottom: 1px solid rgba(255,255,255,0.8);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      border-bottom: 1px solid rgba(0,0,0,0.1); /* subtle Disney-style line */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);   /* light shadow for depth */
 }
     main {
       max-width: 1200px;
