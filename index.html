@@ -272,7 +272,7 @@
 <div id="lockscreen" role="dialog" aria-label="Password required">
   <h1>Please enter the password</h1>
   <form id="passwordForm">
-    <input type="password" id="password" aria-label="Password" value="DisneyWish2022" autofocus />
+    <input type="password" id="password" aria-label="Password" value="DisneyWish" autofocus />
     <button type="submit">Enter</button>
   </form>
   <p id="error" style="color:#ff8080; display:none;">Incorrect password. Please try again.</p>
@@ -785,7 +785,7 @@
   form.addEventListener("submit", function(e) {
     e.preventDefault();
     const input = document.getElementById("password").value;
-    if (input === "DisneyWish2022") {
+    if (input === "DisneyWish") {
       document.getElementById("lockscreen").style.display = "none";
       document.getElementById("content").style.display = "block";
     } else {
